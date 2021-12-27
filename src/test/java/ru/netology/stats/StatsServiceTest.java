@@ -14,7 +14,7 @@ class StatsServiceTest {
         float expected = 190;
         float actual = service.calcSumm(managerSales);
         assertEquals(expected, actual);
-        }
+    }
 
     @Test
     void shouldCalculAverage() {
@@ -33,6 +33,7 @@ class StatsServiceTest {
         long actual = service.maxSales(managerSales);
         assertEquals(expected, actual);
     }
+
     @Test
     void shouldFindMin() {
         StatsService service = new StatsService();
@@ -41,6 +42,7 @@ class StatsServiceTest {
         long actual = service.minSales(managerSales);
         assertEquals(expected, actual);
     }
+
     @Test
     void shouldFindMonthLower() {
         StatsService service = new StatsService();
@@ -49,6 +51,7 @@ class StatsServiceTest {
         float actual = service.calcMonthLowerAverage(managerSales);
         assertEquals(expected, actual);
     }
+
     @Test
     void shouldFindMonthHight() {
         StatsService service = new StatsService();
@@ -58,5 +61,4 @@ class StatsServiceTest {
         assertEquals(expected, actual);
     }
 
-
-    }
+}
